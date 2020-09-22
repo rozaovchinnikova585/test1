@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'SF Pro D_Bold';
+    src: url("sf-pro-display_semibold.woff2");
+    font-weight: 600;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'SF Pro D_Regular';
+    src: url("sf-pro-text_regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.firstPage {
+
+  min-height: 100vh;
+  background-image: url("bg-large3.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #000;
+  background-color: #000;
+  font-family: 'SF Pro D_Regular', sans-serif;
+  padding-bottom: 3rem;
+}
+.secondPage {
+  display: none;
+}
+.body-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 30rem;
+}
+.logo-wrapper {
+  background-color: #000;
+  margin-bottom: 0rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.logo {
+  width: 35rem;
+  height: auto;
+}
+.title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.firstPage-header {
+  font-family: 'SF Pro D_Regular',
+  sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  padding: 3rem 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  background-color: #000;
+
+}
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #fff;
+}
+.header-txt {
+  font-family: 'SF Pro D_Regular',
+  sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+  min-height: 8rem;
+}
+.header-txt2 {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3.3rem;
+  margin-top: 5rem;
+}
+.dot {
+  display: inline-block;
+  width: 4.9rem;
+  height: 4.9rem;
+  text-align: center;
+  line-height: 5.1rem;
+  color: #fff;
+  padding: 0;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  transform: scale(0.25);
+  font-size: 1.7rem;
+  transition: all 0.5s ease-out;
+  background-color: #000;
+}
+.dot span {
+  display: none;
+}
+.dot-active {
+  transform: scale(1);
+  border: none;
+}
+.dot-active span {
+  display: block;
+}
+
+.quest {
+  text-align: center;
+
+}
+.quest-txt {
+  font-family: 'SF Pro D_Regular', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+.btns {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-block;
+  width: 10rem;
+  height: 4.2rem;
+  background-color: #000;
+  border-radius: 2.1rem;
+  border: none;
+  outline: none;
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+  padding: 0;
+  font-family: 'GTEesti Light',
+  sans-serif;
+  font-weight: normal;
+  font-size: 1.9rem;
+  line-height: 4.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.button:hover, .button:active, .button:focus {
+  outline: none !important;
+}
+.long-btn {
+  height: 4.2rem;
+  font-size: 1.6rem;
+  display: block;
+  width: 23rem;
+  margin: 0 auto;
+  padding: 0;
+}
+.b2, .b1, .b3 {
+  margin-bottom: 1rem;
+}
+
+
+.final-txt {
+  font-size: 1.7rem;
+  margin-bottom: 1.6rem;
+}
+.final-txt b {
+  font-size: 1.4rem;
+  font-family: 'SF Pro D_Regular', sans-serif;
+  font-weight: normal;
+}
+.final-btn {
+  background-color: #000;
+  width: 21.1rem;
+  font-size: 1.7rem;
+}
+.q1 {
+  z-index: 30;
+  top: 0;
+  left: 0;
+  transition: all linear 0.5s;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  display: inline-block;
+  text-align: center;
+}
+
+
+ .q4,.q3, .q2, .final {
+  z-index: 30;
+  top: 0;
+  left: 0;
+  transition: all linear 0.5s;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+@media (min-height: 800px) {
+  /* .body-wrapper {
+    min-height: 65vh;
+  } */
+}
+
+@media (min-height: 340px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .firstPage {
+    background-image: url("bg-large3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}
+@media (min-width: 991px) {
+  html {
+    font-size: 11px;
+  }
+  .body-wrapper {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 40rem;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .header-txt {
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .dots {
+    margin-top: 3rem;
+  }
+  .firstPage-header {
+    font-size: 1.6rem;
+  }
+  .quest-txt {
+    font-size: 2rem;
+  }
+  .final-txt {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 340px) {
+  html {
+    font-size: 8px;
+  }
+}

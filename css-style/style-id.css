@@ -1,0 +1,151 @@
+body {
+	min-width: 320px;
+	background-image: linear-gradient(to right top, red , purple ,blue);
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	min-height: 900px;
+}
+.wpageBlock{
+	background: rgba(0, 0, 0, .4) !important;
+	max-width: 900px;
+	min-height: 900px;
+	margin: 0 auto;
+	padding: 25px;
+}
+.titleTop h2{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.titleTop p{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 5px 0px;
+	color: #e3e3e3;
+}
+.titleTop p > span{
+	font-weight: normal;
+}
+.centerMainBox{
+	margin: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textBlockMain{
+	margin-left: 30px;
+}
+.textBlockMain h3{
+	margin: 10px 0px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #afe704;
+}
+.textBlockMain > span{
+	color: #9acc00;
+}
+.textBlockMain p{
+	margin: 5px 0px;
+}
+.textBlockMain form{
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: column;
+
+}
+.textBlockMain form > input{
+	width: 260px;
+	height: 40px;
+	margin: 5px 0px;
+	padding: 0px 5px;
+}
+.orderBtn{
+	width: 260px;
+	height: 50px;
+	cursor: pointer;
+	background-image: linear-gradient(to right top, #2E9AFE ,#2E64FE);
+	border: 1px solid #227e72;
+	box-shadow: 0px 1px 2px #4da699;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: 14px;
+}
+.orderBtn:hover{
+	background-image: linear-gradient(to right top, #61baad, #4da699, #389285, #227e72, #006b60);
+	box-shadow: 0px 1px 2px #006b60;
+	border: 1px solid #61baad;
+}
+.infoBlockText{
+	text-align: center;
+	margin: 50px 0px 0px 0px;
+}
+.add_fav{
+	color: #fff;
+}
+.add_fav:hover{
+	text-decoration: none;
+}
+.footerMain{
+	display: flex;
+}
+.footerMain iframe{
+	width: 50%;
+}
+
+.contact{
+	margin: 0px 0px 0px 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.contact a{
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.contact a:hover{
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 860px){
+	.centerMainBox{
+		flex-direction: column;
+		align-items: center;
+	}
+	.textBlockMain{
+		margin: 50px 0px 20px 0px;
+		text-align: center;
+	}
+	.textBlockMain form{
+		align-items: center;
+	}
+	.infoBlockText{
+		margin: 10px 0px 0px 0px;
+	}
+
+}
+@media screen and (max-width: 600px){
+	.slider{
+		width: 100%;
+	}
+	.slider .item img{
+		width: 100%;
+		height: 100%;
+	}
+	.footerMain{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footerMain iframe{
+		width: 100%;
+	}
+	.contact{
+		margin: 20px 0px;
+	}
+
+}
